@@ -1,0 +1,47 @@
+#!/bin/bash
+clear
+figlet "DARK-FB"
+echo        "▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●"
+echo           "AUTHOR:MR.KALIT09"
+echo         "CYBER MEDAN INDONESIA"
+echo        "▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●"
+echo
+echo "Masukan Menu Tools"
+echo "[1]Dark-FB"
+echo "[2]STABILKAN JARINGAN"
+echo "[3]INSTALL BAHAN"
+echo
+read -p "[ Pilih Nomor  ]>>> " pill
+#batas gan
+if [ $pill = "1" ]
+then
+echo "Sedang Menginstall...." ;sleep 2
+git clone https://github.com/MRKALIT09/MandoCrack12
+cd MandoCrack12
+python2 luangan.py
+echo "[✓]Menginstall Telah Selesai"
+fi
+#batas gan
+if [ $pill = "2" ]
+then
+ping -s 900
+fi
+#batas gan
+if [ $pill = "3" ]
+then
+echo"Sedang Menginstall Bahan...." ;sleep 2
+pkg update && pkg upgrade
+pkg install nano
+pkg install figlet
+pkg install git
+pkg install toilet
+pip2 install requests mechanize
+echo "MENGINSTALL BAHAN TELAH SELESAI"
+fi
+#batas gan
+if [ $pill "0" ]
+then
+echo "TRIMA KASIH TELAH MAMPIR"
+exit
+fi
+
